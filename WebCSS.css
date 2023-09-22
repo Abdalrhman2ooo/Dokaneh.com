@@ -1,0 +1,709 @@
+/* Add your CSS styles here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Scrollbar track */
+/*-------------------------------------------------*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #adadac;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #008080;
+}
+::-webkit-scrollbar-track {
+    background: whitesmoke;
+    border-radius: 6px;
+}
+/*-------------------------------------------------*/
+/*General*/
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    background-color: #ffffff;
+    /* background-image: url('bg.png');  Replace with your image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+h1{
+    font-size:50px;
+    line-height: 64px;
+    color:#222 ;
+}
+h2{
+    font-size:46px;
+    line-height: 54px;
+    color:#222 ;
+}
+h3{
+    font-size:30px;
+    color:#222 ;
+}
+h4{
+    color:#222 ;
+}
+h5{
+    color:#222 ;
+}
+h6{
+    font-size:12px;
+    font-weight: 700;
+    color:#222 ;
+}
+p{
+    font-size:16px;
+    color:#465b52 ;
+    margin: 15px 0 20px 0; 
+}
+a{
+    text-shadow: none;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+button.normal{
+font-size: 16px;
+font-weight: 600;
+padding: 15px 30px;
+color: #000;
+cursor: pointer;
+border: none;
+background-color: #fff;
+border-radius: 4px;
+outline: none;
+transition: 0.2s;
+}
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #3397a6;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    transition: 0.2s;
+}
+/*Top-Bar*/
+/*-------------------------------------*/
+#Top-bar{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 2px;
+        background: #dbdbdb;
+        height: 80px;
+        box-shadow: 0 5px 15px rgba(0 , 0 , 0 , 0.09);
+        z-index: 999;
+        position:sticky;
+        top: 0;
+        left: 0;
+        margin: 0 0;
+}  
+#Top-bar .logo{
+    width: 150px;
+    height: 100px;
+    margin-top: 6px;
+}
+#Top-bar .form{
+    display: flex;
+    width: 20%;
+    margin-left: 7px;
+}
+#Top-bar input{
+    height: 2.125rem;
+    width: 65%;
+    padding: 0 1.25em;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 100px;
+    outline: none;
+   
+}
+#Top-bar button{
+    height: 2.125rem;
+    min-width: 1cm;
+    background-color: #060606;
+    border:1px solid black;
+    color: white;
+    white-space:nowrap;
+    border-radius: 100px;
+    margin-left: 5px;
+    
+}
+#Top-bar button i{
+    color:#ffffff;
+    font-style:normal;
+    font-size: 15px;
+    font-weight: 700;
+}
+#Top-bar button:hover{
+    background-color: #008080;
+    cursor: pointer;
+}
+#menu{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+}
+#menu li{
+    list-style: none;
+    padding: 0 10px;
+    position: relative;
+}
+#menu li a{
+    margin-right: 4px;
+    color: #008080;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 650;
+    transition: 0.03s ease;
+    text-shadow: none;
+}
+#menu li i{
+    color: #000;
+    font-size: 17px;
+}
+#menu li i:hover,
+#menu li i.active{
+    color: #088178;  
+}
+#menu li a:hover,
+#menu li a.active{
+  color: #000000;
+}
+#menu li a.active::after,
+#menu li a:hover::after{
+content: "";
+width: 50%;
+height: 2px;
+background-color:#141515;
+position: absolute;
+bottom: -14px;
+left:11px
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+/*------------------------------------*/
+/*Welcome*/
+#Welcome{
+    background-image: url("new.png");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    justify-content: center;
+}
+#Welcome h4{
+padding-bottom: 10px;
+}
+#Welcome h1{
+    color: #008080;
+}
+#Welcome button:hover{
+    background: #008080;
+    color: whitesmoke;
+}
+/*------------------------------------*/
+/*Feature*/
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.febox{
+    width: 300px;
+    height: 300px;
+}
+#feature .febox{
+    max-width: 340px;
+    text-align:center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0,0.05);
+    border:1.5px solid #162948;
+    border-radius: 7px;
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+#feature .febox:hover{
+    box-shadow: 2px 2px 20px #fff79b;
+}
+#feature .febox img{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 10px 8px 15px;
+}
+#feature .febox h6{
+    display:inline-block;
+    padding: 10px 10px 8px 15px;
+    line-height: 1.5;
+    border-radius: 50px;
+    color:#3e3b3b;
+    background-color: #9cd9d6;
+    font-size: 16px;
+     margin-top: 14px;
+}
+#feature .febox:nth-child(2) h6{
+    background-color: #81e0b5;
+    margin-top: 20px;
+}
+#feature .febox:nth-child(3) h6{
+    background-color: #d0868f;
+    margin-top: -10px;
+}
+#feature .febox:nth-child(4) h6{
+    background-color: #eeceb6;
+    margin-top: 26px;
+}
+#feature .febox:nth-child(5) h6{
+    background-color: #d798cf;
+    margin-top: 6px;
+}
+/*------------------------------------*/
+/*Featured Prudocts*/
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 300px;
+    height: 25%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #162948;
+    border-radius:20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.12);
+}
+#product1 .pro img{
+    width: 100%;
+    height: 100%;
+    border-radius:25px;
+}
+#product1 .pro .description{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .description span{
+color:#838282;
+font-size: 12px;
+}
+#product1 .pro .description h5{
+    padding-top: 7px;
+    color: #008080;
+    font-size: 14px;
+}
+#product1 .pro .description i{
+    font-size: 16px;
+    color: #e5b32b;
+}
+#product1 .pro .description h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #030303;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px; 
+    background-color: #e8f6ea;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+/*------------------------------------*/
+/*Banner1*/
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("Images/discount.jpg");
+    width: 100%;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    font-size: 21px;
+}
+#banner h2{
+    font-size: 42px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: red;
+}
+#banner button:hover{
+    background: #008080;
+    color: whitesmoke;
+}
+/*------------------------------------*/
+/*Banner2*/
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px 30px;
+    
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("Images/shirt.jpg");
+    min-width:575px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner .banner-box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("Images/coat.jpg");
+    min-width:575px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("Images/coat.jpg");
+    min-width:575px;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner h4{
+    color: #008080;
+    font-size: 20px;
+    font-weight: 400;
+}
+#sm-banner h2{
+    color: #3a3a3a;
+    font-size: 28px;
+    font-weight: 800;
+}
+#sm-banner span{
+    color: #3a3a3a;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#sm-banner .banner-box:hover button{
+    background: #3397a6;
+    color: white;
+    border-color: #3397a6;
+}
+#sm-banner .banner-box1:hover button{
+    background: #3397a6;
+    color: white;
+    border-color: #3397a6;
+}
+#sm-banner .banner-box2:hover button{
+    background: #3397a6;
+    color: white;
+    border-color: #3397a6;
+}
+/*------------------------------------*/
+/*Sign Up*/
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image:url("Images/sign up.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    height: 12.5vh;
+    width: 100%;
+    margin: 25px 0;
+}
+    #newsletter h4{
+        font-size: 26px;
+        font-weight: 700;
+        color:white;
+        margin: 5px 25px;
+}
+    #newsletter p{
+        font-size: 17px;
+        font-weight: 600;
+        color:rgb(163, 165, 232);
+        margin: 5px 25px;
+}
+    #newsletter p span{
+        color: #e5c317;
+}
+    #newsletter .form{
+        display: flex;
+        width: 40%;
+        margin-right: 35px;
+}
+    #newsletter input{
+        height: 3.125rem;
+        width: 100%;
+        padding: 0 1.25em;
+        font-size: 16px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        outline: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+}
+    #newsletter button{
+        height: 3.125rem;
+        background-color: #3397a6;
+        color: white;
+        white-space: nowrap;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+}
+/*------------------------------------*/
+/*Footer*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+footer .logo{
+    margin-bottom: 30px; 
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:#222;
+    margin-bottom: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color:#383838;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .payment img{
+    width: 90%;
+    border: 1px solid #021b49;
+    border-radius: 6px;
+    margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover{
+    color: #3397a6;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 7px;
+}
+footer .copyright span{
+    font-weight: 600;
+}
+/*ipad*/
+/*------------------------------------------*/
+@media(max-width:820px){
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top:0;
+        right: -250px;
+        height:100vh;
+        width: 250px;
+        background-color: whitesmoke;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.181);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #menu.active{
+        right: 0px;
+    }
+    #menu li{
+        margin-bottom: 20px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+      color: #000;
+      font-size: 24px;
+      padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #000;
+        font-size: 24px;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #Welcome {
+        height: 70vh;
+        padding: 0 80px;
+        background-position:top 30% right 30%;
+    }
+    #feature {
+        justify-content: center;
+    }
+    #feature .febox {
+        margin: 15px 15px;
+    }
+    #product1 .pro-container {
+        justify-content: center;
+    }
+    #product1 .pro {
+        margin: 15px;
+    }
+    #banner{
+        height: 20vh;
+    }
+    #sm-banner .banner-box {
+        min-width:100%;
+        height: 25vh;
+    }
+    #sm-banner .banner-box1 {
+        min-width:100%;
+        height: 25vh;
+    }
+    #sm-banner .banner-box2 {
+        min-width:100%;
+        height: 25vh;
+    }
+    #newsletter {
+        height: 15vh;
+    }
+    #newsletter .form {
+        width: 70%;
+        margin-left: 32px;
+        height: 13vh;
+    }
+    footer .payment {
+        margin-left: 30px;
+    }
+}
+/*iphone*/
+/*------------------------------------------*/
+@media (max-width: 477px) {
+    #Top-bar button {
+        min-width: 0.7cm;
+        margin-left: 3px;
+    }
+    #Top-bar input {
+        width: 75px;
+        font-size: 12px;
+    }
+    #Top-bar .logo {
+        width: 100px;
+        height: 80px;
+        margin-top: 6px;
+        margin-left: 30px;
+    }
+    h1{
+        font-size: 37px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    #Welcome {
+        background-position: 55%;
+        padding: 0 20px;
+    }
+    #banner {
+        height: 30vh;
+    }
+    #sm-banner .banner-box {
+        height: 30vh;
+    }
+    #sm-banner .banner-box1 {
+        height: 30vh;
+    }
+    #sm-banner .banner-box2 {
+        height: 30vh;
+    }
+    #newsletter {
+        height: 19vh;
+    }
+    #newsletter input {
+        width: 200px;
+        height: 2.125rem;
+    }
+    #newsletter button {
+        height: 2.125rem;
+        padding: 6px 22px;
+    }
+}
